@@ -74,6 +74,7 @@ function renderTodoCard(todoName, heading_id) {
 }
 
 function showFull(headingId) {
+
     let id;
     id = todo_list_id.hash_id(headingId);
     console.log(id);
@@ -101,11 +102,12 @@ function renderTodoItem(todoItem) {
 
     let hashId = todo_list_id.hash_id()
     console.log(hashId);
+    todo_list_id.raw_id = "";
     let pendingId = "task-" + todo_card.item_id(todoItem);
     render = '<div id="todo-task" class="pending-task"><input type="checkbox" id="' + pendingId + '" name="pending-task"><label for="' + pendingId + '"><p>' + todoItem + '</p></label></div>';
 
     $(hashId + " .task-container").append(render);
-    todo_list_id.raw_id = "";
+
 
 }
 
