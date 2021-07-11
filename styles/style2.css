@@ -1,0 +1,111 @@
+.full-width {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    margin: 15px auto;
+    justify-content: flex-start;
+}
+
+.full-width-heading-container {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    justify-content: center;
+}
+
+.full-width-heading-container hr {
+    width: 150px;
+    margin-right: 30px;
+    margin-left: 30px;
+    color: lightgray;
+}
+
+.back-container {
+    display: flex;
+    align-items: center;
+    margin: -10px auto;
+    justify-content: space-evenly;
+    width: 9%;
+    top: 0;
+    cursor: pointer;
+    transition: all 1s ease;
+    position: relative;
+    animation: fade-up 0.3s ease forwards;
+}
+
+@keyframes fade-up {
+    from {
+        top: 30px;
+        opacity: 0;
+    }
+}
+
+.back-container:hover>.function-icon {
+    background-color: #e4412f;
+}
+
+.back-container .light-heading {
+    font-size: 28px;
+    font-weight: 400;
+}
+
+.back-container .function-icon {
+    padding: 1px;
+}
+
+.function-icon .fa-arrow-left {
+    font-size: 18px;
+    margin-top: 25%;
+}
+
+.full-width .todo-card {
+    margin: 30px auto;
+    width: 30%;
+    padding: 20px;
+    height: 400px;
+    position: relative;
+}
+
+.full-width .todo-heading h2 {
+    font-size: 26px;
+    font-weight: 400;
+    cursor: default;
+}
+
+.full-width .todo-heading hr {
+    width: auto;
+    border: 0px solid rgb(175, 175, 175);
+    background: rgb(175, 175, 175);
+    height: 0.05em;
+}
+
+.full-width .task-container {
+    align-self: auto;
+    margin-left: 30px;
+}
+
+.full-width #todo-task p {
+    font-size: 1.3em;
+}
+
+.full-width #todo-task input[type="checkbox"] {
+    transform: scale(1.6);
+}
+
+.full-width .todo-delete .close-cta {
+    display: none;
+}
+
+.full-width .ops-container,
+.full-width .blur-overlay {
+    height: 60px;
+}
+
+.full-width .todo-list-ops {
+    width: 30%;
+    bottom: 15px;
+    transform: scale(1.1);
+}
+
+.full-width .todo-list-ops .add {
+    font-size: 1.6em;
+}

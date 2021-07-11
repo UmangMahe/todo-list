@@ -1,0 +1,55 @@
+/* Responsive Style for index2.html */
+
+@media screen and (max-width: 500px) {
+    #full-width-heading {
+        display: flex;
+    }
+    .responsive-header/* only for responsive styling */
+    {
+        display: flex;
+        flex-direction: row;
+        flex-flow: row-reverse;
+        margin-left: 20px;
+    }
+    .responsive-header .full-width-heading-container {
+        justify-content: flex-start;
+        margin: 15px;
+    }
+    .responsive-header .full-width-heading-container .tasks-heading {
+        font-size: 38px;
+    }
+    .responsive-header .light-heading,
+    .responsive-header .heading-container hr {
+        display: none;
+    }
+    .responsive-header .back-container {
+        margin: 0 auto;
+        width: 15%;
+    }
+    .back-container .function-icon {
+        width: 35px;
+        height: 35px;
+        padding: 2px;
+    }
+    .responsive-header .back-container .function-icon .fa-arrow-left {
+        font-size: 17px;
+    }
+    #body-container.full-width .todo-card {
+        height: 370px;
+        margin: 20px auto;
+        width: 62%;
+        border-width: 1px;
+    }
+    .full-width .todo-card .todo-heading hr {
+        display: inherit;
+    }
+    .full-width .todo-card .task-container {
+        display: inherit;
+    }
+    .full-width .ops-container,
+    .full-width .blur-overlay {
+        display: inherit;
+        left: 0;
+        box-shadow: none;
+    }
+}

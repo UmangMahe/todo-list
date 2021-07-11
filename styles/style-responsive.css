@@ -1,0 +1,62 @@
+/* Responsive Style for index.html */
+
+@media screen and (max-width: 500px) {
+    .body-container {
+        margin: 30px auto;
+    }
+    .tasks-heading {
+        font-size: 53px;
+    }
+    p.light-heading {
+        display: none;
+    }
+    .heading-container {
+        width: 90%;
+        justify-content: space-between;
+    }
+    .function-icon {
+        width: 40px;
+        height: 40px;
+    }
+    .function-icon .add {
+        font-size: 32px;
+    }
+    .todo-card-container {
+        flex-direction: column;
+        width: 95%;
+        margin: 0;
+    }
+    #body-container .todo-card {
+        width: 77%;
+        height: 35px;
+        pointer-events: all;
+        align-items: flex-start;
+        padding: 20px;
+        border: 1px solid #e75c4c63;
+        box-shadow: 3px 3px 5px 2px lightgray;
+    }
+    .ops-container,
+    .blur-overlay {
+        display: none;
+    }
+    .todo-delete .close-cta {
+        top: 33%;
+        right: 15px;
+        bottom: 33%;
+        font-size: 1.8em;
+    }
+    .todo-card .todo-heading h2 {
+        color: gray;
+        width: auto;
+        text-overflow: ellipsis;
+        text-align: left;
+        margin: 0 auto;
+        /* margin-top: 8px; */
+    }
+    .todo-heading hr {
+        display: none;
+    }
+    .todo-card .task-container {
+        display: none;
+    }
+}

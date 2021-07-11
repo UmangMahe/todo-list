@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="stylesheet" href="./styles/style-responsive.css">
+    <link rel="stylesheet" href="./styles/style2.css">
+    <link rel="stylesheet" href="./styles/style-responsive-index2.css">
+    <link rel="stylesheet" href="./styles/pop-up.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+
+
+    <title>Tasks Lists</title>
+</head>
+
+<body>
+    <div id="body-container" class="body-container">
+        <div id="main-heading" class="heading-container">
+            <div>
+                <h1 class="tasks-heading">Tasks <span class="light-heading">Lists</span></h1>
+            </div>
+            <div id="add-list" class="right-container">
+                <div class="function-icon">
+                    <span class="add">+</span>
+                </div>
+                <p class="light-heading">Add List</p>
+            </div>
+        </div>
+
+        <div style="display:none" id="full-width-heading">
+            <div class="responsive-header">
+                <div class="heading-container full-width-heading-container">
+                    <hr>
+                    <h1 class="tasks-heading">Todo Heading
+                    </h1>
+                    <hr>
+                </div>
+                <div id="back-normal-width" class="back-container">
+                    <div class="function-icon">
+                        <span class='fas fa-arrow-left'></span>
+                    </div>
+                    <p class="light-heading">Back</p>
+                </div>
+            </div>
+
+        </div>
+
+
+
+        <div class="todo-card-container">
+
+            <!-- Here will be the JS Generated todo card, below is the static sample -->
+
+            <!-- <div class="todo-card">
+
+                <div class="todo-delete">
+                    <span class='close-cta fas fa-times-circle'></span>
+                </div>
+                <span class="todo-heading">
+                    <h2>Trip to Paris <hr></h2>
+                </span>
+
+                <div class="task-container">
+                    
+                    <div class="pending-task">
+                        <input type="checkbox" id="pending" name="pending-task" value="pending">
+                        <label for="pending"><p>Pending Task</p></label>
+                    </div>
+
+
+                </div>
+
+                <div class="ops-container">
+                    <div class="todo-list-ops">
+                        <span onclick="addItem()" class="function-icon add">+</span>
+                        <div id="btn-delete" class="function-icon delete">
+                            <span class="fa fa-trash-o"></span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="blur-overlay"></div>
+                <div class="ops-container">
+                    <div class="todo-list-ops">
+                        <span onclick="addItem()" class="function-icon add">+</span>
+                        <div id="btn-delete" class="function-icon delete">
+                            <span class="fa fa-trash-o"></span>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div> -->
+        </div>
+    </div>
+    <div id="popup" class="popup-container">
+        <div class="popup-box">
+            <h3>Add New List</h3>
+            <span class='close-cta fas fa-times-circle'></span>
+            <input type="text" class="input-list-item" value="" placeholder="Enter list name">
+
+            <button class="btn-add-cta">Add</button>
+
+
+        </div>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="./js/index.js"></script>
+    <script src="https://kit.fontawesome.com/8ab761a710.js" crossorigin="anonymous"></script>
+</body>
+
+</html>
